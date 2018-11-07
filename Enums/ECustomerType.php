@@ -11,20 +11,23 @@ namespace CustomerBundle\Enums;
 
 class ECustomerType
 {
-    const PROSPECT = 100;
-    const CLIENT = 200;
+    const UNDEFINED = 0;
+    const SUSPECT = 100;
+    const PROSPECT = 200;
+    const CLIENT = 300;
 
-    public function ToString($type)
+    public static function ToString($type)
     {
         switch ($type) {
+            case self::SUSPECT:
+                return 'ecustomer.suspect';
             case self::PROSPECT:
-                return 'Prospect';
+                return 'ecustomer.prospect';
             case self::CLIENT:
-                return 'Client';
+                return 'ecustomer.client';
             default:
-                return 'Undefined';
+                return 'ecustomer.undefined';
         }
-
     }
 
 }

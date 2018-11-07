@@ -11,6 +11,8 @@ namespace CustomerBundle\Enums;
 
 class ECustomerCommunicationType
 {
+    const UNDEFINED = 0;
+
     const EMAIL = 100;
     const TELEPHONE = 200;
     const MOBILE = 300;
@@ -19,7 +21,7 @@ class ECustomerCommunicationType
     const SKYPE = 600;
     const FACEBOOK = 700;
 
-    public function ToString($type)
+    public static function ToString($type)
     {
         switch ($type) {
             case self::EMAIL:

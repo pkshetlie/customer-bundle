@@ -49,6 +49,12 @@ class Customer
      * @ORM\Column(name="company_name", type="string", length=50, nullable=true)
      */
     private $companyName ;
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="siren", type="string", length=50, nullable=true)
+     */
+    private $siren;
 
     /**
      * @var string
@@ -271,4 +277,21 @@ class Customer
     {
         return $this->customer_communications;
     }
+
+    /**
+     * @return string
+     */
+    public function getSiren()
+    {
+        return $this->siren;
+    }
+
+    /**
+     * @param string $siren
+     */
+    public function setSiren($siren)
+    {
+        $this->siren = $siren;
+    }
+
 }

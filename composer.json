@@ -1,7 +1,7 @@
 {
   "name": "pkshetlie/customer-bundle",
   "license": "GPL-3.0-or-later",
-  "description": "Easy way to add simple customer in your application",
+  "description": "Easy way to add simple customer in your symfony application",
   "keywords": [
     "google",
     "analytics",
@@ -11,8 +11,7 @@
   "homepage": "https://github.com/pkshetlie/customer-bundle",
   "require": {
     "php": "^7.0",
-    "google/apiclient": "^2.2",
-    "symfony/symfony": "3.4.*"
+    "symfony/symfony": "3.4.*||4.*"
   },
   "authors": [
     {

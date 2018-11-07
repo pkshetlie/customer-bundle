@@ -1,3 +1,4 @@
-customer_homepage:
-    path:     /customers/
-    defaults: { _controller: CustomerBundle:Crud:index }
+customer_customer:
+    resource: "@CustomerBundle/Resources/config/routing/customer.yml"
+    prefix:   /customer
+
